@@ -1,0 +1,84 @@
+.accommodationPreview__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 15vw;
+    height: 45vh;
+    margin: 2rem 1rem;
+    border-radius: 5px;
+    position: relative;
+    color: var(--color-text);
+    flex: 1;
+    border: 1px solid ghostwhite;
+}
+
+.accommodationPreview__container:hover {
+    box-shadow: 0px 0px 30px var(--color-text);
+}
+
+.accommodationPreview__container-image {
+
+}
+
+.accommodationPreview__container-image img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.acccommodationPreview__container-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.accommodationPreview__container-info__title {
+    line-height: 17px;
+    font-weight: 500;
+    padding: 0 5px;
+}
+
+.acccommodationPreview__container-info__numbers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    bottom: 0;
+    width: 100%;
+}
+
+.acccommodationPreview__container-info__numbers {
+    font-weight: bold;
+}
+
+.acccommodationPreview__container-info__numbers-price {
+    color: var(--color-accent);
+}
+
+.accommodationPreview__container-info__title-city,
+.acccommodationPreview__container-info__numbers-price span {
+    font-size: 10px;
+    color: var(--color-subtext);
+    font-weight: normal;
+}
+
+@media screen and(max-width: 1050px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .accommodationPreview__container {
+        max-width: 35vw;
+    }
+
+
+}
+
+@media screen and (max-width: 550px) {
+
+}

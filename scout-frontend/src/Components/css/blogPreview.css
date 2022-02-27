@@ -1,0 +1,67 @@
+.blogPreview__container {
+    height: 600px;
+    background-image: url(../../images/kozjak.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 3rem 0;
+}
+
+.blogPreview__container__title {
+    width: 80%;
+    height: inherit;
+    margin: 2rem auto;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.blogPreview__container__title-text {
+    color: #fff;
+    font-size: 80px;
+    text-align: center;
+    text-shadow: 4px 4px 6px black;
+    line-height: 70px;
+}
+
+.blogPreview__container__title button {
+    margin: 2rem 2rem;
+    padding: 2rem;
+    font-size: 30px;
+    border-radius: 25px;
+    border: 3px solid var(--color-text);
+    color: #fff;
+    background-color: var(--color-accent);
+    cursor: pointer;
+}
+
+.blogPreview__container__title button:hover {
+    box-shadow: 0px 0px 30px var(--color-text);
+    background-color: var(--color-accent-dark);
+}
+
+@media screen and(max-width: 1050px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    .blogPreview__container__title-text {
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    .blogPreview__container__title button {
+        font-size: 15px;
+    }
+
+    .typeBlock__container-info__title {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+}
+
+

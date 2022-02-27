@@ -1,0 +1,293 @@
+
+.header {
+    background-image: url("../../images/header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    height: 650px;
+    color: #fff;
+}
+
+.header__navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__navbar__toggle-menu {
+    display: none;
+}
+
+.header__navbar__logo {
+    margin: 2rem 0 2rem 4rem;
+}
+
+.header__navbar__link-buttons {
+    margin: 2rem 4rem;
+}
+
+.header__navbar__link-buttons a,
+.header__navbar__link-buttons button {
+    margin: 0 1rem;
+}
+
+.header__navbar__link-buttons a {
+    color: #fff;
+
+}
+
+.header__navbar__link-buttons button, .header__navbar__toggle-menu__container button {
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(202, 202, 202, 0.25);
+    color: #fff;
+    cursor: pointer;
+}
+
+.header__navbar__link-buttons button:hover {
+    border: 1px solid #fff;
+}
+
+.header__navbar__toggle-menu {
+    z-index: 6;
+}
+
+.header__navbar__toggle-menu__container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--color-accent);
+    width: 100vw;
+    height: 100vh;
+    transition: all 0.3s ease-out;
+    box-shadow: 0 5px 30px var(--color-text);
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__navbar__toggle-menu__container a,
+.header__navbar__toggle-menu__container button {
+    margin: 1rem 0;
+    color: #fff;
+}
+
+.openButton, .closeButton {
+    z-index: 10;
+    margin: 3rem 2rem;
+}
+
+
+.header__title {
+    display: flex;
+    flex-direction: column;
+    text-shadow: 4px 4px 6px black;
+    margin-right: 2rem;
+
+}
+
+.header__title-main {
+    display: flex;
+    justify-content: end;
+    font-size: 90px;
+    line-height: 1em;
+    text-align: right;
+    flex-direction: column;
+    margin: 9rem 3rem 1rem 3rem;
+}
+
+.header__title-main p {
+    color: #fff;
+}
+
+.header__title-main p:nth-child(2) {
+    font-weight: 800;
+}
+
+.header__title-sub {
+    display: flex;
+    justify-content: end;
+    text-align: right;
+    margin: 0 3rem 0 0;
+    font-size: 25px;
+    color: #fff;
+
+}
+
+.header__searchBar {
+    position: relative;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 80%;
+    margin: 4rem auto 0 auto;
+    box-shadow: 5px 5px 40px var(--color-text);
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+}
+
+.header__searchBar-people label {
+    margin: 0 0.5rem;
+}
+
+.header__searchBar-people input {
+    width: 50px;
+    padding: 10px;
+    margin-left: 0.5rem;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+
+.header__searchBar-search {
+    margin: 1rem auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__searchBar-search input,
+.header__searchBar-search button {
+    margin: 0 5px;
+}
+
+.header__searchBar-search input {
+    padding: 1rem;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.header__searchBar-search-date-button {
+    padding: 1rem;
+    border: 1px solid var(--color-accent);
+    border-radius: 5px;
+    color: var(--color-accent);
+    background-color: #fff;
+    cursor: pointer;
+    width: 30%;
+}
+
+.header__searchBar-search-date-button:hover,
+.header__searchBar-search-date-button:active {
+    color: #fff;
+    background-color: var(--color-accent);
+}
+
+
+.header__searchBar-search-button {
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: var(--color-accent);
+    cursor: pointer;
+    font-weight: bold;
+    width: 20%;
+}
+
+.header__searchBar-search-button:hover {
+    background-color: var(--color-accent-dark);
+}
+
+.react-calendar {
+    position: absolute;
+    right: 18vw;
+    top: 145px;
+    z-index: 10;
+}
+
+.content__container {
+    position: relative;
+    top: 200px;
+}
+
+.popular__container, .types__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    margin: 2rem auto;
+}
+
+.popularHotels__container-title,
+.topRated__container-title,
+.browseType__container-title {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 100;
+    letter-spacing: -2px;
+}
+
+@media screen and (max-width: 1050px) {
+
+    .header__searchBar-search-date-button {
+        width: 40%;
+    }
+
+    .header__searchBar-search input {
+        width: 45%;
+    }
+
+    .blogPreview__container__title-text {
+        font-size: 60px;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .popular__container {
+        display: grid;
+        justify-content: center;
+    }
+
+    .header__navbar__link-buttons {
+        display: none;
+    }
+
+    .header__navbar__toggle-menu {
+        display: flex;
+    }
+
+    .header__searchBar-people label {
+        font-size: 12px;
+    }
+
+    .header__searchBar-search-date-button {
+        width: 45%;
+    }
+
+    .header__searchBar-search-date-button, .header__searchBar-search input, .header__searchBar-search-button {
+        font-size: 10px;
+    }
+
+    .blogPreview__container__title-text {
+        font-size: 40px;
+    }
+
+    .header__title-main {
+        font-size: 60px;
+    }
+
+    .header__title-sub {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .header__navbar__logo {
+        transform: scale(0.6);
+        margin: 2rem 0;
+    }
+
+}
+
+
+
+
