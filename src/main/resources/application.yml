@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5000/scout
+    username: admin
+    password: scout123
+    hikari:
+      connection-timeout: 20000
+      maximum-pool-size: 5
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL95Dialect
+        jdbc:
+          lob:
+            non_contextual_creation: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  flyway:
+    url: jdbc:postgresql://localhost:5000/scout
+    user: admin
+    password: scout123
+    locations:
+      - classpath:db/migration
+
+
+
