@@ -1,5 +1,4 @@
 import React from 'react'
-import resort from '../images/accommodation.jpg'
 import './css/accommodationPreview.css';
 
 const AccommodationPreview = ({id, name, city, country, userRating, currency, price, imageLink}) => {
@@ -11,7 +10,7 @@ const AccommodationPreview = ({id, name, city, country, userRating, currency, pr
             </div>
             <div className='accommodationPreview__container-info__title'>
                 <p className='accommodationPreview__container-info__title-name'>{name}</p>
-                <p className='accommodationPreview__container-info__title-city'>`${city}, ${country}`</p>
+                <p className='accommodationPreview__container-info__title-city'>{city}, {country}</p>
             </div>
             <div className='acccommodationPreview__container-info'>
 

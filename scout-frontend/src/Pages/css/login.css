@@ -1,0 +1,23 @@
+.login__container{
+    max-width: 600px;
+    margin: 4rem auto;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 15px var(--color-text);
+    border-radius: 5px;
+}
+
+.login__container-title--dash{
+    width: 280px;
+    border-top: 2px solid var(--color-accent);
+}
+
+.inp, .login__container-rememberMe, .btnComponent{
+    margin: 2rem 0 0 0;
+}
+
+.rememberMe:checked{
+    background-color: var(--color-accent);
+}

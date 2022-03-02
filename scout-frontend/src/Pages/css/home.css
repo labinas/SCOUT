@@ -8,78 +8,6 @@
     color: #fff;
 }
 
-.header__navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.header__navbar__toggle-menu {
-    display: none;
-}
-
-.header__navbar__logo {
-    margin: 2rem 0 2rem 4rem;
-}
-
-.header__navbar__link-buttons {
-    margin: 2rem 4rem;
-}
-
-.header__navbar__link-buttons a,
-.header__navbar__link-buttons button {
-    margin: 0 1rem;
-}
-
-.header__navbar__link-buttons a {
-    color: #fff;
-
-}
-
-.header__navbar__link-buttons button, .header__navbar__toggle-menu__container button {
-    padding: 1rem;
-    border: none;
-    border-radius: 5px;
-    background-color: rgba(202, 202, 202, 0.25);
-    color: #fff;
-    cursor: pointer;
-}
-
-.header__navbar__link-buttons button:hover {
-    border: 1px solid #fff;
-}
-
-.header__navbar__toggle-menu {
-    z-index: 6;
-}
-
-.header__navbar__toggle-menu__container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: var(--color-accent);
-    width: 100vw;
-    height: 100vh;
-    transition: all 0.3s ease-out;
-    box-shadow: 0 5px 30px var(--color-text);
-    z-index: 5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.header__navbar__toggle-menu__container a,
-.header__navbar__toggle-menu__container button {
-    margin: 1rem 0;
-    color: #fff;
-}
-
-.openButton, .closeButton {
-    z-index: 10;
-    margin: 3rem 2rem;
-}
-
 
 .header__title {
     display: flex;
@@ -221,6 +149,10 @@
     font-size: 35px;
     font-weight: 100;
     letter-spacing: -2px;
+}
+
+input[type='checkbox']:checked{
+    background-color: var(--color-accent);
 }
 
 @media screen and (max-width: 1050px) {

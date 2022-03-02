@@ -14,7 +14,7 @@ const PopularHotelsContainer = () => {
     }, []);
 
     return (
-        <>
+        <div className='popular__container'>
             {hotels.map((hotel) => {
                 let link = "/accommodation/" + hotel.id;
                 return <Link to={link}>
@@ -30,25 +30,9 @@ const PopularHotelsContainer = () => {
                     />
                     </Link>
             })}
-        </>
+        </div>
         
-        /*<div className='popular__container'>
-            <Link to=''>
-                <AccommodationPreview/>
-            </Link>
-            <Link to='#'>
-                <AccommodationPreview/>
-            </Link>
-            <Link to='#'>
-                <AccommodationPreview/>
-            </Link>
-            <Link to='#'>
-                <AccommodationPreview/>
-            </Link>
-            <Link to='#'>
-                <AccommodationPreview/>
-            </Link>
-        </div>*/
+    
     )
 }
 

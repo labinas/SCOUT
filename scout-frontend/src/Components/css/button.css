@@ -1,0 +1,14 @@
+.btnComponent {
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: var(--color-accent);
+    cursor: pointer;
+    font-weight: bold;
+    width: 20%;
+}
+
+.btnComponent:hover {
+    background-color: var(--color-accent-dark);
+}

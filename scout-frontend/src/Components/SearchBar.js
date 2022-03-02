@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import Calendar from 'react-calendar'
+import Button from './Button';
 
 
 const SearchBar = () => {
@@ -38,7 +39,7 @@ const SearchBar = () => {
                 </button>
 
                 {date.length > 0 && console.log(date[0], date[1])}
-                <button className='header__searchBar-search-button' type='button'>Search</button>
+                <Button btnText='Search'/>
             </div>
             {calendarOpen && <Calendar onChange={handleDateOnChange} selectRange={true} value={date}/>}
         </div>
