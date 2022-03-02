@@ -6,6 +6,12 @@ spring:
     hikari:
       connection-timeout: 20000
       maximum-pool-size: 5
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2KB
+      max-file-size: 30MB
+      max-request-size: 215MB
 
   jpa:
     properties:

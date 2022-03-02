@@ -50,6 +50,8 @@ public class AppUser implements UserDetails {
     List<Accommodation> savedProperties;
     @OneToMany
     List<Traveler> travelers;
+    @OneToMany
+    List<Accommodation> ownedProperties;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

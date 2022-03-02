@@ -6,6 +6,8 @@ import History from './History';
 import App from './App';
 import './index.css';
 
+axios.defaults.baseURL = 'http://localhost:8080';
+
 ReactDOM.render(<BrowserRouter history={History}>
     <App/>
 </BrowserRouter>, document.getElementById('root'));

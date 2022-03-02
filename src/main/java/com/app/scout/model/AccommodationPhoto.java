@@ -22,4 +22,9 @@ public class AccommodationPhoto {
     Long id;
     boolean cover;
     String imgPath;
+
+    public AccommodationPhoto(boolean cover, String imgPath) {
+        this.cover = cover;
+        this.imgPath = imgPath;
+    }
 }

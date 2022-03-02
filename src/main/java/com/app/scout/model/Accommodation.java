@@ -20,6 +20,7 @@ public class Accommodation {
     Long id;
     String name;
     String address;
+    @Column(length = 20000)
     String about;
     double X;
     double Y;
@@ -28,13 +29,13 @@ public class Accommodation {
     double userRating;
     boolean entireAccommodation;
 
-    @ManyToMany
+    @ManyToMany(cascade = {CascadeType.ALL})
     List<AccommodationPhoto> photos;
     @ManyToOne
     AccommodationType type;
     @ManyToMany
     List<Facility> facilities;
-    @OneToMany
+    @OneToMany(cascade = {CascadeType.ALL})
     List<Room> rooms;
     @ManyToOne
     City city;

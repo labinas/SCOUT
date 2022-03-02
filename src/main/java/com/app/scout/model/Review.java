@@ -18,6 +18,7 @@ public class Review {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
     int rating;
+    @Column(length = 5000)
     String reviewText;
     boolean recommend;
     boolean visitAgain;

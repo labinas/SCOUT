@@ -2,25 +2,25 @@ import React from 'react'
 import resort from '../images/accommodation.jpg'
 import './css/accommodationPreview.css';
 
-const AccommodationPreview = () => {
+const AccommodationPreview = ({id, name, city, country, userRating, currency, price, imageLink}) => {
     return (
         <div className='accommodationPreview__container'>
             <div className='accommodationPreview__container-image'>
-                <img src={resort}></img>
+                <img src={imageLink}></img>
 
             </div>
             <div className='accommodationPreview__container-info__title'>
-                <p className='accommodationPreview__container-info__title-name'>Lukanov Apartments & Guest Rooms</p>
-                <p className='accommodationPreview__container-info__title-city'>Skopje</p>
+                <p className='accommodationPreview__container-info__title-name'>{name}</p>
+                <p className='accommodationPreview__container-info__title-city'>`${city}, ${country}`</p>
             </div>
             <div className='acccommodationPreview__container-info'>
 
                 <div className='acccommodationPreview__container-info__numbers'>
                     <p className='acccommodationPreview__container-info__numbers-price'>
                         <span>from</span>
-                        1,500 MKD
+                        {price} {currency}
                     </p>
-                    <p className='acccommodationPreview__container-info__numbers-rating'>⭐8.7</p>
+                    <p className='acccommodationPreview__container-info__numbers-rating'>⭐{userRating}</p>
                 </div>
             </div>
 

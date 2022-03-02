@@ -26,5 +26,6 @@ public class Message implements Serializable {
     LocalDate sentAt;
     boolean recieved;
     boolean seen;
+    @Column(length = 1000)
     String messageText;
 }
